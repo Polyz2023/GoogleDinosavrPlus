@@ -87,7 +87,7 @@ public:
 
 int main()
 {
-    sf::RenderWindow window(sf::VideoMode(1800, 900), "Google Dino Plus", sf::Style::Titlebar | sf::Style::Close);
+    sf::RenderWindow window(sf::VideoMode(1800, 800), "Google Dino Plus", sf::Style::Titlebar | sf::Style::Close);
     window.setFramerateLimit(60);
    
     GAME obj;
@@ -130,9 +130,10 @@ int main()
             obj.getNit().setString("Do you want to play again?\n Click 'G' if you want");
             obj.getNit().setPosition(window.getSize().x/2 -200, (window.getSize().y - 100 ) / 2);
 
+            obj.getCact().setPosition(1900.f, 600.f);
+
             if (sf::Keyboard::isKeyPressed(sf::Keyboard::G)) {
                 play = true;
-
             }
 
             window.draw(obj.getNit());
