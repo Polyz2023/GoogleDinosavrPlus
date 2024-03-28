@@ -114,7 +114,7 @@ int main()
 
             window.clear(sf::Color::White);
 
-            obj.getCact().move(-7.f, 0);
+            obj.getCact().move(-7.2f, 0);
 
             if (obj.getCact().getPosition().x < -200) {
                 obj.getCact().setPosition(1900.f, 600.f);
